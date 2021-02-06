@@ -22,6 +22,11 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Running Server
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+use `npm run start:nodemon` on console to run the node server or nodemon server.js
+
+## Dependencies of Node
+`npm install --save express` (a framework for node to make the dev easier)<br/>
+`npm install --save-dev nodemon` cmd to run: `nodemon [server].js` (provides the server - rerun on its own) <br/>
+`npm install --save body-parser` (parser incoming req, extracts post  req data)

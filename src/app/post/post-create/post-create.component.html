@@ -1,0 +1,36 @@
+<!--template driven form example-->
+<div class="example-container">
+  <form (submit)="postAdd(postData)" #postData="ngForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Title</mat-label>
+      <input name="title" placeholder="post title" matInput ngModel #title="ngModel" required minlength="3">
+      <mat-error *ngIf="title.invalid">invalid input</mat-error>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Content</mat-label>
+      <textarea placeholder="post content" matInput name="content" ngModel></textarea>
+    </mat-form-field>
+    <br/>
+    <button mat-raised-button color="accent" type="submit">Save post</button>
+  </form>
+</div>
+<hr>
+
+
+<!--<div class="example-container">-->
+<!--  <mat-form-field appearance="fill">-->
+<!--    <mat-label>Input</mat-label>-->
+<!--    <input matInput [(ngModel)]="title">-->
+<!--  </mat-form-field>-->
+<!--  <br>-->
+
+<!--  <mat-form-field appearance="fill">-->
+<!--    <mat-label>Textarea</mat-label>-->
+<!--    <textarea matInput [(ngModel)]="content"></textarea>-->
+<!--  </mat-form-field> <br/>-->
+<!--  <button mat-raised-button color="accent" (click)="postAdd()">Save post</button>-->
+<!--</div>-->
+<!--<hr>-->
+
